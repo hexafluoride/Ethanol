@@ -44,8 +44,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataReader.cs" />
+    <Compile Include="Extensions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RiffChunk.cs" />
+    <Compile Include="RiffFile.cs" />
     <Compile Include="WaveGenerator.cs" />
     <Compile Include="WaveFile.cs" />
   </ItemGroup>

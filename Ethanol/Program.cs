@@ -14,7 +14,7 @@ namespace Ethanol
         static void Main(string[] args)
         {
             WaveGenerator gen = new WaveGenerator() { Amplitude = 0.25 };
-            WaveFile file = new WaveFile("./test.pcm");
+            WaveFile file = new WaveFile("./out.wav");
 
             if(args.Length < 4)
             {
@@ -58,12 +58,7 @@ namespace Ethanol
             }
 
             file.Save();
-
-            //Process.Start("ffmpeg", "-f f64le -ar 44100 -ac 1 -i test.pcm -y out.wav").WaitForExit();
-
             Console.WriteLine("\ndone!");
-            Console.WriteLine("You can run ffmpeg -f f64le -ar 44100 -ac 1 -i test.pcm output.wav to convert the raw PCM file to a WAV file.");
-            //Console.ReadKey();
         }
     }
 }
